@@ -1,0 +1,130 @@
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+#overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background-color: #1b262c;
+}
+
+.navigationBar {
+  position: fixed;
+  display: inline-block;
+  background-color: #3282b8;
+  height: 100vh;
+  width: 100px;
+  text-align: center;
+}
+
+.navigationBar h3 {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navigationBar ul {
+  left: 3px;
+  margin: 0px;
+  border: 0px;
+  padding: 0%;
+  margin-top: 8rem;
+}
+
+.navigationBar ul li {
+  margin-top: 5rem;
+}
+
+.navigationBar i {
+  font-size: 2rem;
+  color: white;
+}
+
+.navigationBar p {
+  color: white;
+}
+
+.navigationBar #darkModeBtn {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  background-color: transparent;
+}
+
+.main-content {
+  margin-left: 100px;
+  width: 92.5vw;
+}
+
+.login-frm {
+  position: absolute;
+  top: 48vh;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.login-frm #create-highlight {
+  color: white;
+  font-size: 70px;
+  font-family: "Nunito", sans-serif;
+}
+
+.login-frm #create-highlight2 {
+  color: white;
+  margin-bottom: 60px;
+  margin-left: 5px;
+}
+
+.login-frm form {
+  font-size: 20px;
+  width: 75%;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-frm form input {
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #3282b8;
+  border-radius: 10px;
+  color: white;
+  margin: 0px 0px 0px 0px;
+}
+
+.login-frm form #submitBtn {
+  background-color: #3282b8;
+  margin-top: 13%;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  border: 2px solid #0f4c75;
+  border-radius: 13px;
+  height: 70px;
+  font-size: 25px;
+}
+
+#background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 37vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-left: 0px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+/*# sourceMappingURL=createprofile.css.map */

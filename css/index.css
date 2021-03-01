@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background-color: #1b262c;
+}
+
+.navigationBar {
+  position: fixed;
+  display: inline-block;
+  background-color: #3282b8;
+  height: 100vh;
+  width: 100px;
+  text-align: center;
+}
+
+.navigationBar h3 {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.navigationBar ul {
+  left: 3px;
+  margin: 0px;
+  border: 0px;
+  padding: 0%;
+  margin-top: 8rem;
+}
+
+.navigationBar ul li {
+  margin-top: 5rem;
+}
+
+.navigationBar i {
+  font-size: 2rem;
+  color: white;
+}
+
+.navigationBar p {
+  color: white;
+}
+
+.navigationBar #darkModeBtn {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  background-color: transparent;
+}
+
+.main-content {
+  margin-left: 100px;
+  width: 92.5vw;
+}
+
+.intro {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 35vh;
+}
+
+.intro h1 {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+}
+
+.intro #intro-greeting {
+  opacity: 0;
+}
+
+.intro #glad {
+  opacity: 0;
+}
+
+.intro #intro-info {
+  opacity: 0;
+  font-size: 40px;
+  width: 100%;
+}
+
+.intro button {
+  position: relative;
+  top: 150px;
+  left: -10px;
+  margin: 30px;
+  padding: 40px;
+  background-color: transparent;
+  border: 6px solid #3282b8;
+  border-radius: 14px;
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.intro button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: white;
+  color: #0f4c75;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.main-content1 {
+  margin-left: 100px;
+  width: 92.5vw;
+  display: none;
+}
+
+.main-content1 .top-menu {
+  width: 90%;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.main-content1 .top-menu #addMoneyBtn {
+  background-color: #0f4c75;
+  padding: 20px;
+  width: 200px;
+  color: white;
+  border-radius: 4px;
+  font-family: "Nunito", sans-serif;
+}
+
+#credit-txt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0px 20px 20px 0px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#credit-txt:hover {
+  color: #3282b8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=index.css.map */
