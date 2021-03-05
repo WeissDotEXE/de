@@ -20,7 +20,7 @@ ul {
     display: inline-block;
     background-color: #3282b8;
     height: 100vh;
-    width: 100px;
+    width: 5.5vw;
     text-align: center;
     
     h3{
@@ -33,7 +33,7 @@ ul {
         margin: 0px;
         border: 0px;
         padding: 0%;
-        margin-top: 8rem;
+        margin-top: 3rem;
         li{
             margin-top: 5rem;
         }
@@ -48,20 +48,29 @@ ul {
     #darkModeBtn{
         position: absolute;
         bottom: 0;
-        left: 5px;
+        left: 10%;
+        margin: auto;
+        text-align: center;
         background-color: transparent;
     }
 }
 .main-content{
     margin-left:100px;
-    width: 92.5vw;
-    
+    width: 94.5vw;
+}
+#intro-video{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.3);
+    opacity: 0;
 }
 .intro{
     color: white;
     text-align: center;
     position: relative;
-    top: 35vh;
+    top: 30vh;
     h1{
         font-size: 5rem;
         position: absolute;
@@ -78,7 +87,7 @@ ul {
     }
     #intro-info{
         opacity:0;
-        font-size: 40px;
+        font-size: 50px;
         width: 100%;
     }
     button{
@@ -87,7 +96,7 @@ ul {
         left: -10px;
         margin: 30px;
         padding: 40px;
-        background-color: transparent;
+        background-color:rgba(128, 128, 128, 0.411);
         border: 6px solid $thirdColor;
         border-radius: 14px;
         color: white;
@@ -104,22 +113,71 @@ ul {
         box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     }
 }
+
+//from down here is css if profile created(main-content div is hidden)
 .main-content1{
     margin-left:100px;
     width: 92.5vw;
     display: none;
-    .top-menu{
-        width: 90%;
+    color: white;
+    #customGreetingName{
+        padding:4% 0px 0px 5.5%;
+        font-size: 3.3rem;
+    }
+    #image-right{
+        width: 27%;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 5%;
+    }
+    .menu{
+        background-color:#27363f;
+        width: 57%; //change for laptop display
+        margin-left: 2.3%;
         position: relative;
         top: 50px;
         left: 50px;
+        padding: 20px;
+        border-radius: 10px;
         #addMoneyBtn{
-            background-color: $secondaryColor;
-            padding: 20px;
+            margin:2% 30px 0px 3%;
+            padding:12px;
             width: 200px;
             color: white;
-            border-radius: 4px;
+            border-radius: 10px;
             font-family: $primaryFont;
+            font-size: 25px;
+            background: $thirdColor;
+            border:3px solid $thirdColor;
+            transition: 0.3s;
+        }
+        #addMoneyBtn:hover{
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.3s;
+        }
+        #exchangeBtn{
+            margin:2% 30px 0px 3%;
+            padding:12px;
+            width: 200px;
+            color: white;
+            border-radius: 10px;
+            font-family: $primaryFont;
+            font-size: 25px;
+            background: transparent;
+            border:3px solid $thirdColor;
+            transition: 0.3s;
+        }
+        #exchangeBtn:hover{
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.3s;
+        }
+        #money{
+            margin: 4% 0 0 3%;
         }
     }
 }
@@ -135,4 +193,21 @@ ul {
 #credit-txt:hover{
     color: $thirdColor;
     transition: 0.3s;
+}
+
+// css for laptops with 720p screens
+@media only screen and (max-width: 1400px) {
+    .navigationBar{
+        width: 90px;
+        #darkModeBtn{
+            left:2%;
+        }
+    }
+    .main-content{
+        margin-left: 50px;
+    }
+    .main-content1{
+        margin-left: 50px;
+    }
+    
 }

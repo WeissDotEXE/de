@@ -26,33 +26,30 @@ anime({
 });
 anime({
     targets:['#createAccBtn','#guestBtn'],
+    translateY:'20',
     opacity:1,
     direction:'normal',
-    duration:900,
+    duration:1000,
     easing:'easeInOutSine',
-    delay:7500
+    delay:7600
+});
+anime({
+    targets:'#intro-video',
+    opacity:1,
+    duration:800,
+    delay:7500,
+    easing:'easeInOutSine'
 });
 
-const darkModeBtn=document.querySelector('#darkModeBtn');
-
-darkModeBtn.addEventListener('click',function(){ // function for dark/day mode
-
-});
-
-// class for client informations
-class Client{
-    constructor(firstName,lastName,email,yearOfBirth){
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.email=email;
-        this.yearOfBirth=yearOfBirth;
-    }
-    calcAge(){
-        return 2021-this.yearOfBirth;
-    }
-    fullName(){
-        return this.firstName+' '+this.lastName;
-    }
+//script for checking if profile is already created(sessionStorage)
+//for not showing the initial index.html(main-content class)
+let isCompletedData=sessionStorage.getItem('isCompleted');
+let firstNameData=sessionStorage.getItem('firstName');
+let lastNameData=sessionStorage.getItem('lastName');
+let emailData=sessionStorage.getItem('email');
+if(isCompletedData==="true"){
+    document.querySelector('.main-content').style.display="none";
+    document.querySelector('.main-content1').style.display="block";
+    document.querySelector('#customGreetingName').innerHTML ="Welcome, "+ firstNameData+' '+ lastNameData;
+    
 }
-
-client= new Client();
