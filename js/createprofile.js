@@ -23,6 +23,6 @@ submitBtn.addEventListener('click',function(){
     if(firstNameData!=="" && lastNameData!=="" && emailData!==""){
         sessionStorage.setItem("isCompleted",true);
         let isCompleted=sessionStorage.getItem('isCompleted');
-        document.querySelector("#submitBtn").href="index.html"; 
+        document.querySelector('#submitBtn').href="index.html"; 
     }
 });

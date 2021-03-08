@@ -1,0 +1,41 @@
+anime({
+    targets: '#intro-greeting',
+    translate:20,
+    opacity:1,
+    direction:'alternate',
+    duration:2000,
+    easing: 'easeInOutSine'
+});
+anime({
+    targets:'#glad',
+    opacity:1,
+    direction:'alternate',
+    duration:2000,
+    easing:'easeInOutSine',
+    delay:3500,
+    duration:2000
+});
+anime({
+    targets:'#intro-info',
+    opacity:1,
+    direction:'normal',
+    duration: 1800,
+    delay:6500,
+    easing:'easeInOutSine'
+});
+anime({
+    targets:['#createAccBtn','#guestBtn'],
+    translateY:'20',
+    opacity:1,
+    direction:'normal',
+    duration:1000,
+    easing:'easeInOutSine',
+    delay:7600
+});
+anime({
+    targets:'#intro-video',
+    opacity:1,
+    duration:800,
+    delay:7500,
+    easing:'easeInOutSine'
+});
